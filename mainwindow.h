@@ -20,15 +20,19 @@ public:
 
 private slots:
     void on_login_btn_triggered();
+    void on_exit_triggered();
+
+    void on_obnovit_triggered();
 
 private:
     Ui::MainWindow *ui;
     QString home_path = QDir::homePath();
-    QTcpSocket * socket;
+    QTcpSocket *socket = new QTcpSocket();
     Translitter * Translit = new Translitter();
     QString username;
     QString login;
     QString class_num;
     QString person_type;
+    void update_mark();
 };
 #endif // MAINWINDOW_H

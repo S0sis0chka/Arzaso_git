@@ -6,21 +6,413 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1280</width>
+    <height>720</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Электронный дневник</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0">
      <layout class="QGridLayout" name="gridLayout">
-      <item row="0" column="0">
-       <widget class="QTableWidget" name="tableWidget"/>
+      <item row="2" column="1">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="userinfo">
+        <property name="text">
+         <string>Фамилия
+Имя
+Класс</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="res.qrc">:/pic/pic/avatar_img.jpg</pixmap>
+        </property>
+       </widget>
       </item>
      </layout>
+    </item>
+    <item row="0" column="2">
+     <widget class="QWidget" name="widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="16" column="1">
+        <widget class="QLabel" name="obz">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0" colspan="2">
+        <widget class="Line" name="line_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="informat">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="individual">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_12">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Информатика</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Геометрия</string>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>ОБЖ</string>
+         </property>
+        </widget>
+       </item>
+       <item row="22" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Физкультура</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="Line" name="line">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="1">
+        <widget class="QLabel" name="geometry">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="22" column="1">
+        <widget class="QLabel" name="phizra">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLabel" name="istoria">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Алгебра</string>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="0" colspan="2">
+        <widget class="Line" name="line_9">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_13">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Индивидуальный проект</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_11">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>История</string>
+         </property>
+        </widget>
+       </item>
+       <item row="23" column="0" colspan="2">
+        <widget class="Line" name="line_12">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="1">
+        <widget class="QLabel" name="obzestvo">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="2">
+        <widget class="Line" name="line_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="0" colspan="2">
+        <widget class="Line" name="line_8">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLabel" name="literat">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="0" colspan="2">
+        <widget class="Line" name="line_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0" colspan="2">
+        <widget class="Line" name="line_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="20" column="1">
+        <widget class="QLabel" name="phizika">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0" colspan="2">
+        <widget class="Line" name="line_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="24" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Химия</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="0" colspan="2">
+        <widget class="Line" name="line_7">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_14">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Биология</string>
+         </property>
+        </widget>
+       </item>
+       <item row="18" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Русский язык</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Обществознание</string>
+         </property>
+        </widget>
+       </item>
+       <item row="20" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Физика</string>
+         </property>
+        </widget>
+       </item>
+       <item row="24" column="1">
+        <widget class="QLabel" name="himiya">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="19" column="0" colspan="2">
+        <widget class="Line" name="line_10">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="18" column="1">
+        <widget class="QLabel" name="russkiy">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="1">
+        <widget class="QLabel" name="algebra">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Литература</string>
+         </property>
+        </widget>
+       </item>
+       <item row="21" column="0" colspan="2">
+        <widget class="Line" name="line_11">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="biologia">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="Line" name="line_13">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
@@ -29,7 +421,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1280</width>
      <height>21</height>
     </rect>
    </property>
@@ -38,15 +430,37 @@
      <string>Аккаунт</string>
     </property>
     <addaction name="login_btn"/>
+    <addaction name="separator"/>
+    <addaction name="obnovit"/>
+    <addaction name="separator"/>
+    <addaction name="exit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Настройки</string>
+    </property>
    </widget>
    <addaction name="menu"/>
+   <addaction name="menu_2"/>
   </widget>
   <action name="login_btn">
    <property name="text">
     <string>Вход в аккаунт</string>
    </property>
   </action>
+  <action name="exit">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="obnovit">
+   <property name="text">
+    <string>Обновить оценки</string>
+   </property>
+  </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>
