@@ -48,7 +48,7 @@ void MainWindow::on_login_btn_triggered()
         file.close();
         QString login_encode = encode(login_form->get_login(), number);
         QString password_encode = encode(login_form->get_password(), number);
-        //qWarning()<< password_encode;
+        //qWarning() << password_encode;
         //qWarning() << login_encode;
         socket->connectToHost("alexavr.ru", 25555, QTcpSocket::ReadWrite);
         socket->waitForConnected();
